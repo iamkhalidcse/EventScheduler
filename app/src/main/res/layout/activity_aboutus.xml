@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha=".7"
+    android:background="@drawable/bgnew"
+    tools:context="com.example.khalidjavaid.bgsbu.aboutus"
+    tools:layout_editor_absoluteY="81dp">
+
+  <TextView
+      android:id="@+id/label_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginBottom="31dp"
+      android:layout_marginTop="67dp"
+      android:fontFamily="sans-serif"
+      android:text="Developed by"
+      android:textColor="@color/currentMonthDayColor"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/developed_label"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/developed_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="44dp"
+      android:layout_marginTop="122dp"
+      android:fontFamily="sans-serif"
+      android:lineSpacingExtra="8dp"
+      android:text="Nisar Ahmad (17-CSE-15)\nKhalid Javaid (21-CSE-15)\nSheeza Chalkoo (27-CSE-15)\nAfsha Jaweed (36-CSE-15)"
+      android:textColor="@android:color/background_dark"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/supervision_label"
+      android:layout_width="175dp"
+      android:layout_height="21dp"
+      android:layout_marginBottom="216dp"
+      android:layout_marginStart="28dp"
+      android:fontFamily="sans-serif"
+      android:text="Under the guidance of"
+      android:textColor="@android:color/background_light"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guide_label" />
+
+  <TextView
+      android:id="@+id/guide_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="68dp"
+      android:layout_marginTop="20dp"
+      android:fontFamily="sans-serif"
+      android:text="Mr. Sparsh Sharma"
+      android:textColor="@android:color/background_light"
+      android:textSize="28sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/supervision_label" />
+
+</android.support.constraint.ConstraintLayout>

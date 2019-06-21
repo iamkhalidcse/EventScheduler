@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.khalidjavaid.bgsbu.MainActivity">
+    <item
+        android:id="@+id/action_jump"
+        android:orderInCategory="100"
+        android:title="@string/Action_GotoDate"
+        app:showAsAction="never" />
+
+    <item
+    android:id="@+id/action_sync"
+    android:orderInCategory="100"
+    android:title="@string/Action_sync"
+    app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_Directory"
+        android:orderInCategory="100"
+        android:title="Directory"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_AboutUs"
+        android:orderInCategory="100"
+        android:title="@string/action_aboutus"
+        app:showAsAction="never" />
+
+
+</menu>

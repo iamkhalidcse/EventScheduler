@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/tree"
+
+  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  tools:context="com.example.khalidjavaid.bgsbu.MainActivity"
+  tools:showIn="@layout/activity_main">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/yellow"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha=".8"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:paddingBottom="22dp">
+
+
+      <!--<TextView-->
+      <!--android:id="@+id/Textcal"-->
+      <!--android:layout_width="wrap_content"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginTop="10dp"-->
+      <!--android:layout_marginLeft="110dp"-->
+      <!--tools:text="2018"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:textColor="@android:color/black"-->
+      <!--android:textSize="26sp" />-->
+
+      <TextView
+          android:id="@+id/prev_Month"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="16dp"
+          android:layout_weight="1"
+          android:gravity="start"
+          android:onClick="prevMonth"
+          android:text="\u25C0"
+          android:textColor="@android:color/black"
+          android:textSize="22sp" />
+
+      <TextView
+          android:id="@+id/TextMonth"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:layout_weight="1"
+          android:fontFamily="sans-serif-condensed"
+          android:gravity="center_horizontal"
+          android:textColor="@android:color/black"
+          android:textSize="22sp"
+          tools:text="March 2018" />
+
+      <TextView
+          android:id="@+id/next_Month"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="16dp"
+          android:layout_marginTop="16dp"
+          android:layout_weight="1"
+          android:gravity="end"
+          android:onClick="nextMonth"
+          android:text="\u25B6"
+          android:textColor="@android:color/black"
+          android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:alpha=".8"
+        android:paddingEnd="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="20dp"
+        app:compactCalendarCurrentDayTextColor="@color/white"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="14sp" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:backgroundTintMode="screen"
+
+
+        android:fastScrollEnabled="false"
+
+
+        android:scrollbars="vertical" />
+
+
+  </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
